@@ -1,0 +1,107 @@
+<!-- MHonArc v2.6.19+ -->
+<!--X-Subject: [NCDXC Chat] Strange Anomaly in WSJT&#45;X -->
+<!--X-From-R13: YS1P &#60;xr1oNevpufrvsreg.pbz> -->
+<!--X-Date: Sat, 23 Jul 2022 19:50:17 &#45;0500 -->
+<!--X-Message-Id: 1D105B69&#45;61F0&#45;4937&#45;85AC&#45;B4755FA39702@richseifert.com -->
+<!--X-Content-Type: text/plain -->
+<!--X-Head-End-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>[NCDXC Chat] Strange Anomaly in WSJT-X</title>
+<link rev="made" href="mailto:ke1b@richseifert.com">
+</head>
+<body>
+<!--X-Body-Begin-->
+<!--X-User-Header-->
+<!--X-User-Header-End-->
+<!--X-TopPNI-->
+<hr>
+[<a href="msg26358.html">Date Prev</a>][<a href="msg26360.html">Date Next</a>][<a href="msg26358.html">Thread Prev</a>][<a href="msg26360.html">Thread Next</a>][<a href="maillist.html#26359">Date Index</a>][<a href="threads.html#26359">Thread Index</a>]
+<!--X-TopPNI-End-->
+<!--X-MsgBody-->
+<!--X-Subject-Header-Begin-->
+<h1>[NCDXC Chat] Strange Anomaly in WSJT-X</h1>
+<hr>
+<!--X-Subject-Header-End-->
+<!--X-Head-of-Message-->
+<ul>
+<li><em>To</em>: NCDXC Discussion List &lt;<a href="mailto:chat%40ncdxc.org">chat@ncdxc.org</a>&gt;</li>
+<li><em>Subject</em>: [NCDXC Chat] Strange Anomaly in WSJT-X</li>
+<li><em>From</em>: KE1B &lt;<a href="mailto:ke1b%40richseifert.com">ke1b@richseifert.com</a>&gt;</li>
+<li><em>Date</em>: Sat, 23 Jul 2022 17:33:10 -0700</li>
+<li><em>Authentication-results</em>: earthlink-vadesecure.net;	auth=pass smtp.auth=<a href="mailto:seifert%40netcom.com">seifert@netcom.com</a>	smtp.mailfrom=<a href="mailto:ke1b%40richseifert.com">ke1b@richseifert.com</a>; </li>
+<li><em>Dkim-signature</em>: v=1; a=rsa-sha256; bh=jmPU/J785ZERYRbD9PF8yiTiuxyCRnZ9g7USo8	4RyDw=; c=relaxed/relaxed; d=earthlink.net; h=from:reply-to:subject:	date:to:cc:resent-date:resent-from:resent-to:resent-cc:in-reply-to:	references:list-id:list-help:list-unsubscribe:list-subscribe:list-post:	list-owner:list-archive; q=dns/txt; s=dk12062016; t=1658622792;	x=1659227592; b=eex/4Tj1/iOy7O4764aeqBtr9+iZRqV+rOaKCptSGrndgFZvVqDwkan	WTSVJzFsGETvdYSPCDqC9047xFNN444DPnIyy7lFqsOC9K5FSBazxZs34eKjvqduja+ZCeM	ilmfzA/uI7fWlo5k7Fy0/igDAPmX+UN/FXfYgVIrHaUg+a9lP2IRJmfdeAgVgVNAnBuWUDF	YTv6DE2gy5ci+RvO9Eikg7qHUUltJlJXQ0pgLB5soKyAIwvSXe93eeLQUVZBNaGvvp/LnMz	0vsekm3zDqsEhvztGX2ntPaKrA6RScj3eRt0vQsQBHtcDPWfwruSL6POyeY1tX7lIhTNkzz	+lg==</li>
+<li><em>List-archive</em>: &lt;<a href="http://mail.ncdxc.org/mailman/private/chat_ncdxc.org/">http://mail.ncdxc.org/mailman/private/chat_ncdxc.org/</a>&gt;</li>
+<li><em>List-help</em>: &lt;<a href="mailto:chat-request@ncdxc.org?subject=help">mailto:chat-request@ncdxc.org?subject=help</a>&gt;</li>
+<li><em>List-id</em>: NCDXC Discussion List &lt;chat.ncdxc.org&gt;</li>
+<li><em>List-post</em>: &lt;<a href="mailto:chat@ncdxc.org">mailto:chat@ncdxc.org</a>&gt;</li>
+<li><em>List-subscribe</em>: &lt;<a href="http://mail.ncdxc.org/mailman/listinfo/chat_ncdxc.org">http://mail.ncdxc.org/mailman/listinfo/chat_ncdxc.org</a>&gt;,	&lt;<a href="mailto:chat-request@ncdxc.org?subject=subscribe">mailto:chat-request@ncdxc.org?subject=subscribe</a>&gt;</li>
+<li><em>List-unsubscribe</em>: &lt;<a href="http://mail.ncdxc.org/mailman/options/chat_ncdxc.org">http://mail.ncdxc.org/mailman/options/chat_ncdxc.org</a>&gt;,	&lt;<a href="mailto:chat-request@ncdxc.org?subject=unsubscribe">mailto:chat-request@ncdxc.org?subject=unsubscribe</a>&gt;</li>
+</ul>
+<!--X-Head-of-Message-End-->
+<!--X-Head-Body-Sep-Begin-->
+<hr>
+<!--X-Head-Body-Sep-End-->
+<!--X-Body-of-Message-->
+<pre>OK, brain trust. I&#x2019;m hoping someone can tell me what&#x2019;s going on here.
+
+I have WSJT-X running perfectly well on my Mac (OS 12 Monterey). All of the &#x201C;standard&#x201D; frequencies are properly defined in the Frequencies panel.
+
+Now, let&#x2019;s say I want to go to 15m FT8. OK, I set the mode to FT8 and select 21.074 from the frequency drop-down menu.
+
+For about one second, WSJT-X shows 21.074 on its display, but then IMMEDIATELY changes it to 21.073.941, a slight offset of 59 Hz. Stranger though, is that the program is setting the radio frequency to 21.074.100, a 100 Hz offset in the OTHER DIRECTION. I can make QSOs just fine, either calling CQ or clicking on a received call, but I suspect the displayed audio offset (e.g., 1500 Hz) is different from what someone else is seeing, although we can communicate just fine.
+
+This happens regardless of band or mode. If I select FT8 on 20m, instead of 14.074, WSJT-X displays 14.073.994, and the radio is set to 14.074.100.
+Same for FT4, e.g. on 15m I select 21.140, WSJT-X jumps to 21.139.940 and sets the radio to 21.140.100. It&#x2019;s always around 59-60 low on the WSJT display, and always 100 Hz high on the actual radio frequency. This offset is small enough so that it doesn&#x2019;t really interfere with making QSOs (no one goes THAT close to the audio passband edges), but it seems weird. Also, the offset amount is consistently the same.
+
+Radio is an Icom IC-7600, RIT is disabled, WSJT offset is set to &#x201C;Fake it&#x201D;. Other than the slight frequency shifts, everything works fine, transmit and receive.
+
+Also, there is no frequency offset when using my regular logger on CW or SSB; the displayed frequency on the logger is exactly what the radio is set to, and they track perfectly.
+
+Rich KE1B
+
+
+
+
+</pre>
+<!--X-Body-of-Message-End-->
+<!--X-MsgBody-End-->
+<!--X-Follow-Ups-->
+<hr>
+<ul><li><strong>Follow-Ups</strong>:
+<ul>
+<li><strong><a name="26360" href="msg26360.html">Re: [NCDXC Chat] Strange Anomaly in WSJT-X</a></strong>
+<ul><li><em>From:</em> Roger Miller &lt;ac6bw@yahoo.com&gt;</li></ul></li>
+</ul></li></ul>
+<!--X-Follow-Ups-End-->
+<!--X-References-->
+<!--X-References-End-->
+<!--X-BotPNI-->
+<ul>
+<li>Prev by Date:
+<strong><a href="msg26358.html">Re: [NCDXC Chat] Free 10 element 2M yagi</a></strong>
+</li>
+<li>Next by Date:
+<strong><a href="msg26360.html">Re: [NCDXC Chat] Strange Anomaly in WSJT-X</a></strong>
+</li>
+<li>Previous by thread:
+<strong><a href="msg26358.html">Re: [NCDXC Chat] Free 10 element 2M yagi</a></strong>
+</li>
+<li>Next by thread:
+<strong><a href="msg26360.html">Re: [NCDXC Chat] Strange Anomaly in WSJT-X</a></strong>
+</li>
+<li>Index(es):
+<ul>
+<li><a href="maillist.html#26359"><strong>Date</strong></a></li>
+<li><a href="threads.html#26359"><strong>Thread</strong></a></li>
+</ul>
+</li>
+</ul>
+
+<!--X-BotPNI-End-->
+<!--X-User-Footer-->
+<!--X-User-Footer-End-->
+</body>
+</html>

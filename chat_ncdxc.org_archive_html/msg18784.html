@@ -1,0 +1,125 @@
+<!-- MHonArc v2.6.19+ -->
+<!--X-Subject: [NCDXC Chat] kx3 rtty setup -->
+<!--X-From-R13: Fbk &#60;fpbgg.fznyyNtznvy.pbz> -->
+<!--X-Date: Thu, 13 Feb 2020 13:41:56 &#45;0600 -->
+<!--X-Message-Id: CADkB6UoimSSPcaCWZf9ZkLma5ciE_=7LdfyrigEWF=UKFYeatw@mail.gmail.com -->
+<!--X-Content-Type: text/plain -->
+<!--X-Head-End-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>[NCDXC Chat] kx3 rtty setup</title>
+<link rev="made" href="mailto:scott.small@gmail.com">
+</head>
+<body>
+<!--X-Body-Begin-->
+<!--X-User-Header-->
+<!--X-User-Header-End-->
+<!--X-TopPNI-->
+<hr>
+[<a href="msg18783.html">Date Prev</a>][<a href="msg18785.html">Date Next</a>][<a href="msg18783.html">Thread Prev</a>][<a href="msg18785.html">Thread Next</a>][<a href="maillist.html#18784">Date Index</a>][<a href="threads.html#18784">Thread Index</a>]
+<!--X-TopPNI-End-->
+<!--X-MsgBody-->
+<!--X-Subject-Header-Begin-->
+<h1>[NCDXC Chat] kx3 rtty setup</h1>
+<hr>
+<!--X-Subject-Header-End-->
+<!--X-Head-of-Message-->
+<ul>
+<li><em>To</em>: chat &lt;<a href="mailto:chat%40ncdxc.org">chat@ncdxc.org</a>&gt;</li>
+<li><em>Subject</em>: [NCDXC Chat] kx3 rtty setup</li>
+<li><em>From</em>: Tox &lt;<a href="mailto:scott.small%40gmail.com">scott.small@gmail.com</a>&gt;</li>
+<li><em>Date</em>: Thu, 13 Feb 2020 11:41:44 -0800</li>
+<li><em>Dkim-signature</em>: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20161025;	h=mime-version:from:date:message-id:subject:to;	bh=8QvFcGDaIRoHgVmyQVoNB1vkJZjtGa41lAs6ctLcQ0o=;	b=I4MHJJYHLcyhNYU+L9CpBtrlns6cv9W/IXwtNy1ScAF1D1Somo6C2KezQ0JEgRkBoS	yJaMfx8ZwcRx9pqMNS+0fvEIVPVsogykimDrE/t+xLgcC0VuZz64FqTeiiYiA0dbwZPK	rd+Taz8Tl3ye9m+XHIt7H0uuiwWPgyiJ9TV3a71b6A3R1zmS0aLyjLECuxdvM27gJsJn	Lah8gKwB1b4F5spYf3kA1XAKsGMdg24gYuK3jGs+xUcMr7xgqlCds9VOHJlZTX31nRiZ	qE5KryUZb5dcqkhbM1A5/tV/WaumQZRVRqataxLrCKF8J3cSLu7Zx+oNgvr8xg9TWPAm	xvRg==</li>
+<li><em>List-archive</em>: &lt;<a href="http://mail.ncdxc.org/mailman/private/chat_ncdxc.org/">http://mail.ncdxc.org/mailman/private/chat_ncdxc.org/</a>&gt;</li>
+<li><em>List-help</em>: &lt;<a href="mailto:chat-request@ncdxc.org?subject=help">mailto:chat-request@ncdxc.org?subject=help</a>&gt;</li>
+<li><em>List-id</em>: NCDXC Discussion List &lt;chat.ncdxc.org&gt;</li>
+<li><em>List-post</em>: &lt;<a href="mailto:chat@ncdxc.org">mailto:chat@ncdxc.org</a>&gt;</li>
+<li><em>List-subscribe</em>: &lt;<a href="http://mail.ncdxc.org/mailman/listinfo/chat_ncdxc.org">http://mail.ncdxc.org/mailman/listinfo/chat_ncdxc.org</a>&gt;,	&lt;<a href="mailto:chat-request@ncdxc.org?subject=subscribe">mailto:chat-request@ncdxc.org?subject=subscribe</a>&gt;</li>
+<li><em>List-unsubscribe</em>: &lt;<a href="http://mail.ncdxc.org/mailman/options/chat_ncdxc.org">http://mail.ncdxc.org/mailman/options/chat_ncdxc.org</a>&gt;,	&lt;<a href="mailto:chat-request@ncdxc.org?subject=unsubscribe">mailto:chat-request@ncdxc.org?subject=unsubscribe</a>&gt;</li>
+</ul>
+<!--X-Head-of-Message-End-->
+<!--X-Head-Body-Sep-Begin-->
+<hr>
+<!--X-Head-Body-Sep-End-->
+<!--X-Body-of-Message-->
+<pre>I've got a kx3 connected to my laptop via a cheap usb-c - to - mic &amp;
+headphone port adapter. Those are going to the headphone and mic ports
+of my kx3, respectively. The USB serial adapter is plugged into the
+expected port on the kx3 as well, after passing through a usbc-&gt;usb
+adapter.
+
+This all works fine for wsjt-x under high sierra on my macbook pro,
+logs to MacLoggerDX just fine, etc. - my primary gremlin for ft8 is
+simply intermittent broadband noise that puts the local beams down to
+-10 and washes the rest out.
+
+RTTY, on the other hand.....
+
+I've not yet found the magic to get it working correctly with fldigi
+to run RTTY - I will sometimes get a partial decode, usually get what
+looks like alphabet salad (kinda like my kx3's default rendering of cw
+decode). If I get anything at all. (Operator skills for RTTY qsos
+using fldigi are also a clear weak point).
+
+I have reviewed the fldigi docs.
+
+Does anyone have a particular reference they would suggest (likely a
+youtube vid?) that would demonstrate correct/best practices for
+operating using fldigi (not cocoamodem) and the usbc soundcard (not a
+signalink/rigblaster) ?
+
+I figure once I can get basic manual QSOs working, then I can take the
+next step to try and deal with logging automation to MacLoggerDX on
+modern macOS.
+
+Failing that, is there anyone around San Jose that'd be game to
+shoulder-surf? Since this is inherently portable, I can probably bring
+it to you.
+
+Thanks,
+
+Scott
+AD6YT
+
+
+-- 
+Scott Small
+
+
+</pre>
+<!--X-Body-of-Message-End-->
+<!--X-MsgBody-End-->
+<!--X-Follow-Ups-->
+<hr>
+<!--X-Follow-Ups-End-->
+<!--X-References-->
+<!--X-References-End-->
+<!--X-BotPNI-->
+<ul>
+<li>Prev by Date:
+<strong><a href="msg18783.html">Re: [NCDXC Chat] DX Spot: 5I5TT RTTY 14.083.3 19:14 UTC</a></strong>
+</li>
+<li>Next by Date:
+<strong><a href="msg18785.html">[NCDXC Chat] DX Spot: TN/UA9FGR Congo 14.074 FT8</a></strong>
+</li>
+<li>Previous by thread:
+<strong><a href="msg18783.html">Re: [NCDXC Chat] DX Spot: 5I5TT RTTY 14.083.3 19:14 UTC</a></strong>
+</li>
+<li>Next by thread:
+<strong><a href="msg18785.html">[NCDXC Chat] DX Spot: TN/UA9FGR Congo 14.074 FT8</a></strong>
+</li>
+<li>Index(es):
+<ul>
+<li><a href="maillist.html#18784"><strong>Date</strong></a></li>
+<li><a href="threads.html#18784"><strong>Thread</strong></a></li>
+</ul>
+</li>
+</ul>
+
+<!--X-BotPNI-End-->
+<!--X-User-Footer-->
+<!--X-User-Footer-End-->
+</body>
+</html>

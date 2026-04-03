@@ -1,0 +1,132 @@
+<!-- MHonArc v2.6.19+ -->
+<!--X-Subject: Re: [NCDXC Chat] Kenwood, Apple and FT8 -->
+<!--X-From-R13: Pvyy Tenagm &#60;senagmNcjcpbafhyg.pbz> -->
+<!--X-Date: Fri, 08 Dec 2017 23:38:38 &#45;0600 -->
+<!--X-Message-Id: r470Ps&#45;10132i&#45;2AA442FF64044E438A83D7870D5009C8@Williams&#45;MacBook&#45;Pro.local -->
+<!--X-Content-Type: text/plain -->
+<!--X-Reference: 63D19792&#45;5147&#45;4D8E&#45;B073&#45;2E6C02272B94@gmail.com -->
+<!--X-Head-End-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Re: [NCDXC Chat] Kenwood, Apple and FT8</title>
+<link rev="made" href="mailto:frantz@pwpconsult.com">
+</head>
+<body>
+<!--X-Body-Begin-->
+<!--X-User-Header-->
+<!--X-User-Header-End-->
+<!--X-TopPNI-->
+<hr>
+[<a href="msg14240.html">Date Prev</a>][<a href="msg14242.html">Date Next</a>][<a href="msg14229.html">Thread Prev</a>][<a href="msg14230.html">Thread Next</a>][<a href="maillist.html#14241">Date Index</a>][<a href="threads.html#14241">Thread Index</a>]
+<!--X-TopPNI-End-->
+<!--X-MsgBody-->
+<!--X-Subject-Header-Begin-->
+<h1>Re: [NCDXC Chat] Kenwood, Apple and FT8</h1>
+<hr>
+<!--X-Subject-Header-End-->
+<!--X-Head-of-Message-->
+<ul>
+<li><em>To</em>: Harry Makler &lt;<a href="mailto:hmakler%40gmail.com">hmakler@gmail.com</a>&gt;</li>
+<li><em>Subject</em>: Re: [NCDXC Chat] Kenwood, Apple and FT8</li>
+<li><em>From</em>: Bill Frantz &lt;<a href="mailto:frantz%40pwpconsult.com">frantz@pwpconsult.com</a>&gt;</li>
+<li><em>Date</em>: Fri,  8 Dec 2017 21:24:01 -0800</li>
+<li><em>Cc</em>: <a href="mailto:chat%40ncdxc.org">chat@ncdxc.org</a></li>
+<li><em>In-reply-to</em>: &lt;<a href="msg14229.html">63D19792-5147-4D8E-B073-2E6C02272B94@gmail.com</a>&gt;</li>
+<li><em>List-archive</em>: &lt;<a href="http://mail.ncdxc.org/mailman/private/chat_ncdxc.org/">http://mail.ncdxc.org/mailman/private/chat_ncdxc.org/</a>&gt;</li>
+<li><em>List-help</em>: &lt;<a href="mailto:chat-request@ncdxc.org?subject=help">mailto:chat-request@ncdxc.org?subject=help</a>&gt;</li>
+<li><em>List-id</em>: NCDXC Discussion List &lt;chat.ncdxc.org&gt;</li>
+<li><em>List-post</em>: &lt;<a href="mailto:chat@ncdxc.org">mailto:chat@ncdxc.org</a>&gt;</li>
+<li><em>List-subscribe</em>: &lt;<a href="http://mail.ncdxc.org/mailman/listinfo/chat_ncdxc.org">http://mail.ncdxc.org/mailman/listinfo/chat_ncdxc.org</a>&gt;,	&lt;<a href="mailto:chat-request@ncdxc.org?subject=subscribe">mailto:chat-request@ncdxc.org?subject=subscribe</a>&gt;</li>
+<li><em>List-unsubscribe</em>: &lt;<a href="http://mail.ncdxc.org/mailman/options/chat_ncdxc.org">http://mail.ncdxc.org/mailman/options/chat_ncdxc.org</a>&gt;,	&lt;<a href="mailto:chat-request@ncdxc.org?subject=unsubscribe">mailto:chat-request@ncdxc.org?subject=unsubscribe</a>&gt;</li>
+</ul>
+<!--X-Head-of-Message-End-->
+<!--X-Head-Body-Sep-Begin-->
+<hr>
+<!--X-Head-Body-Sep-End-->
+<!--X-Body-of-Message-->
+<pre style="margin: 0em;">
+On 12/4/17 at 12:03 PM, chat@ncdxc.org (Harry Makler via Chat) wrote:
+
+</pre><blockquote style="border-left: #5555EE solid 0.2em; margin: 0em; padding-left: 0.85em"><tt>As I do, who has a Kenwood 590SG, an Apple (IMac) computer and 
+</tt><tt>has successfully installed and uses FT8 ?
+</tt></blockquote><pre style="margin: 0em;">
+
+</pre><tt>One item that is very annoying is that it is possible to have 
+</tt><tt>two drivers installed for the FTDI USB &lt;--&gt; RS-232 interface 
+</tt><tt>converter. If there are two drivers installed, then Hamlib will 
+</tt><tt>not be able to initialize itself. To find out if you have more 
+</tt><tt>than one driver installed, in terminal type:
+</tt><pre style="margin: 0em;">
+
+</pre><tt>Williams-MacBook-Pro:~ frantz$ find /System/Library/Extensions 
+</tt><tt>-name *FTDI*
+</tt><pre style="margin: 0em;">
+
+When I got the result:
+
+/System/Library/Extensions/FTDIUSBSerialDriver.kext
+/System/Library/Extensions/FTDIUSBSerialDriver.kext/Contents/MacOS/FTDIUSBSerialDriver
+/System/Library/Extensions/AppleUSBFTDI.kext
+/System/Library/Extensions/AppleUSBFTDI.kext/Contents/MacOS/AppleUSBFTDI
+
+</pre><tt>I removed the 
+</tt><tt>/System/Library/Extensions/FTDIUSBSerialDriver.kext file (by 
+</tt><tt>moving it to another location), rebooted and everything started working.
+</tt><pre style="margin: 0em;">
+
+Perhaps this will help.
+
+73 Bill AE6JV
+
+-----------------------------------------------------------------------
+Bill Frantz        | Security is like Government  | Periwinkle
+</pre><tt>(408)356-8506      | services. The market doesn't | 16345 
+</tt><tt>Englewood Ave
+</tt><tt>www.pwpconsult.com | want to pay for them.        | Los Gatos, 
+</tt><tt>CA 95032
+</tt><pre style="margin: 0em;">
+
+
+
+</pre>
+<!--X-Body-of-Message-End-->
+<!--X-MsgBody-End-->
+<!--X-Follow-Ups-->
+<hr>
+<!--X-Follow-Ups-End-->
+<!--X-References-->
+<ul><li><strong>References</strong>:
+<ul>
+<li><strong><a name="14229" href="msg14229.html">[NCDXC Chat] Kenwood, Apple and FT8</a></strong>
+<ul><li><em>From:</em> Harry Makler &lt;hmakler@gmail.com&gt;</li></ul></li>
+</ul></li></ul>
+<!--X-References-End-->
+<!--X-BotPNI-->
+<ul>
+<li>Prev by Date:
+<strong><a href="msg14240.html">Re: [NCDXC Chat] 9M6XRO John - SK</a></strong>
+</li>
+<li>Next by Date:
+<strong><a href="msg14242.html">[NCDXC Chat] 3C0L &amp; 3C1L LOTW QSLs arrived last night !</a></strong>
+</li>
+<li>Previous by thread:
+<strong><a href="msg14229.html">[NCDXC Chat] Kenwood, Apple and FT8</a></strong>
+</li>
+<li>Next by thread:
+<strong><a href="msg14230.html">[NCDXC Chat] Spot: 5W0DXA, 7.1521 MHz, 0426Z</a></strong>
+</li>
+<li>Index(es):
+<ul>
+<li><a href="maillist.html#14241"><strong>Date</strong></a></li>
+<li><a href="threads.html#14241"><strong>Thread</strong></a></li>
+</ul>
+</li>
+</ul>
+
+<!--X-BotPNI-End-->
+<!--X-User-Footer-->
+<!--X-User-Footer-End-->
+</body>
+</html>

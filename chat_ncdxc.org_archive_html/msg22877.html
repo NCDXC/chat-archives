@@ -1,0 +1,132 @@
+<!-- MHonArc v2.6.19+ -->
+<!--X-Subject: Re: [NCDXC Chat] Audio levels? -->
+<!--X-From-R13: Pvyy Tenagm &#60;senagmNcjcpbafhyg.pbz> -->
+<!--X-Date: Mon, 12 Apr 2021 13:30:10 &#45;0500 -->
+<!--X-Message-Id: r480Ps&#45;10146i&#45;F2387E92B1CC4BB5BFAA0786365994A0@Williams&#45;MacBook&#45;Pro.local -->
+<!--X-Content-Type: text/plain -->
+<!--X-Reference: 257b0fbf&#45;d3c8&#45;ea48&#45;e5dc&#45;7a2b2540dcb1@gmail.com -->
+<!--X-Head-End-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Re: [NCDXC Chat] Audio levels?</title>
+<link rev="made" href="mailto:frantz@pwpconsult.com">
+</head>
+<body>
+<!--X-Body-Begin-->
+<!--X-User-Header-->
+<!--X-User-Header-End-->
+<!--X-TopPNI-->
+<hr>
+[<a href="msg22876.html">Date Prev</a>][<a href="msg22878.html">Date Next</a>][<a href="msg22870.html">Thread Prev</a>][<a href="msg22816.html">Thread Next</a>][<a href="maillist.html#22877">Date Index</a>][<a href="threads.html#22877">Thread Index</a>]
+<!--X-TopPNI-End-->
+<!--X-MsgBody-->
+<!--X-Subject-Header-Begin-->
+<h1>Re: [NCDXC Chat] Audio levels?</h1>
+<hr>
+<!--X-Subject-Header-End-->
+<!--X-Head-of-Message-->
+<ul>
+<li><em>To</em>: Rick NK7I via Chat &lt;<a href="mailto:chat%40ncdxc.org">chat@ncdxc.org</a>&gt;</li>
+<li><em>Subject</em>: Re: [NCDXC Chat] Audio levels?</li>
+<li><em>From</em>: Bill Frantz &lt;<a href="mailto:frantz%40pwpconsult.com">frantz@pwpconsult.com</a>&gt;</li>
+<li><em>Date</em>: Mon, 12 Apr 2021 14:30:10 -0400</li>
+<li><em>In-reply-to</em>: &lt;<a href="msg22862.html">257b0fbf-d3c8-ea48-e5dc-7a2b2540dcb1@gmail.com</a>&gt;</li>
+<li><em>List-archive</em>: &lt;<a href="http://mail.ncdxc.org/mailman/private/chat_ncdxc.org/">http://mail.ncdxc.org/mailman/private/chat_ncdxc.org/</a>&gt;</li>
+<li><em>List-help</em>: &lt;<a href="mailto:chat-request@ncdxc.org?subject=help">mailto:chat-request@ncdxc.org?subject=help</a>&gt;</li>
+<li><em>List-id</em>: NCDXC Discussion List &lt;chat.ncdxc.org&gt;</li>
+<li><em>List-post</em>: &lt;<a href="mailto:chat@ncdxc.org">mailto:chat@ncdxc.org</a>&gt;</li>
+<li><em>List-subscribe</em>: &lt;<a href="http://mail.ncdxc.org/mailman/listinfo/chat_ncdxc.org">http://mail.ncdxc.org/mailman/listinfo/chat_ncdxc.org</a>&gt;,	&lt;<a href="mailto:chat-request@ncdxc.org?subject=subscribe">mailto:chat-request@ncdxc.org?subject=subscribe</a>&gt;</li>
+<li><em>List-unsubscribe</em>: &lt;<a href="http://mail.ncdxc.org/mailman/options/chat_ncdxc.org">http://mail.ncdxc.org/mailman/options/chat_ncdxc.org</a>&gt;,	&lt;<a href="mailto:chat-request@ncdxc.org?subject=unsubscribe">mailto:chat-request@ncdxc.org?subject=unsubscribe</a>&gt;</li>
+</ul>
+<!--X-Head-of-Message-End-->
+<!--X-Head-Body-Sep-Begin-->
+<hr>
+<!--X-Head-Body-Sep-End-->
+<!--X-Body-of-Message-->
+<tt>On 12/04/2021 03:30 on the wsjt-x developer list, Andy Durbin, 
+</tt><tt>k3wyc asked:
+</tt><blockquote style="border-left: #5555EE solid 0.2em; margin: 0em; padding-left: 0.85em"><tt>Would someone please point me to an explanation of how the dB 
+</tt><tt>report of a received FT8 signal is derived. ...
+</tt></blockquote><pre style="margin: 0em;">
+
+Hi Andy,
+
+</pre><tt>noise estimation is mode dependent. Modes that are likely to be 
+</tt><tt>used without other signals in the pass band measure the noise 
+</tt><tt>between tones and extrapolate to the 2500 Hz noise bandwidth we 
+</tt><tt>use for SNR reports. Other modes like FT8 that are often used in 
+</tt><tt>very crowded bands, and are able to decode overlapping signals, 
+</tt><tt>need a different approach to noise estimation, they measure the 
+</tt><tt>whole received spectrum and attempt to fit a baseline curve to 
+</tt><tt>estimate the noise. When estimating a baseline it is essential 
+</tt><tt>that the receiver passband is close to the 2500 Hz noise 
+</tt><tt>bandwidth reference or more, otherwise noise will be 
+</tt><tt>underestimated and SNR numbers will be incorrect higher than reality.
+</tt><pre style="margin: 0em;">
+
+</pre><tt>In general we do not recommend reducing your Rx bandwidth to 
+</tt><tt>less than 2500 Hz, the filtering in the WSJT-X decoders is far 
+</tt><tt>more suitable for these modes than anything your rig might 
+</tt><tt>offer. The only exception might be when there is an 
+</tt><tt>exceptionally strong signal in the passband that is disrupting 
+</tt><tt>decoding by requiring greatly reduced RF gain or excessive AGC 
+</tt><tt>action that pushes wanted weak signals below the receiver noise floor.
+</tt><pre style="margin: 0em;">
+
+73
+Bill
+G4WJS.
+
+------------------------------------------------------------------------
+</pre><tt>Bill Frantz        |&quot;Insofar as the propositions of mathematics 
+</tt><tt>refer to
+</tt><tt>408-348-7900       | reality, they are not certain; and insofar 
+</tt><tt>they are
+</tt><tt>www.pwpconsult.com | certain, they do not refer to reality.&#x201D; 
+</tt><tt>-- Einstein
+</tt><pre style="margin: 0em;">
+
+
+
+</pre>
+<!--X-Body-of-Message-End-->
+<!--X-MsgBody-End-->
+<!--X-Follow-Ups-->
+<hr>
+<!--X-Follow-Ups-End-->
+<!--X-References-->
+<ul><li><strong>References</strong>:
+<ul>
+<li><strong><a name="22862" href="msg22862.html">Re: [NCDXC Chat] Audio levels?</a></strong>
+<ul><li><em>From:</em> &quot;Rick Bates, NK7I&quot; &lt;rick.nk7i@gmail.com&gt;</li></ul></li>
+</ul></li></ul>
+<!--X-References-End-->
+<!--X-BotPNI-->
+<ul>
+<li>Prev by Date:
+<strong><a href="msg22876.html">[NCDXC Chat] DX SPOT: UN7AM on 14073.9 in PSK at 04/12/2021 1557Z (UN: Kazakhstan)</a></strong>
+</li>
+<li>Next by Date:
+<strong><a href="msg22878.html">[NCDXC Chat] DX Spot ZB2RR Gibraltar 14.074 FT8 1849 UTC</a></strong>
+</li>
+<li>Previous by thread:
+<strong><a href="msg22870.html">Re: [NCDXC Chat] Audio levels?</a></strong>
+</li>
+<li>Next by thread:
+<strong><a href="msg22816.html">[NCDXC Chat] DX Spot: DT8A 10.131 FT8 F/H 03:00 UTC</a></strong>
+</li>
+<li>Index(es):
+<ul>
+<li><a href="maillist.html#22877"><strong>Date</strong></a></li>
+<li><a href="threads.html#22877"><strong>Thread</strong></a></li>
+</ul>
+</li>
+</ul>
+
+<!--X-BotPNI-End-->
+<!--X-User-Footer-->
+<!--X-User-Footer-End-->
+</body>
+</html>

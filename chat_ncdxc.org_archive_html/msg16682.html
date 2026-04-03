@@ -1,0 +1,146 @@
+<!-- MHonArc v2.6.19+ -->
+<!--X-Subject: [NCDXC Chat] T31EU's use of FT8 -->
+<!--X-From-R13: Pvyy Tenagm &#60;senagmNcjcpbafhyg.pbz> -->
+<!--X-Date: Mon, 04 Mar 2019 13:37:58 &#45;0600 -->
+<!--X-Message-Id: r480Ps&#45;10143i&#45;D8D3CF1FC999449395F60ED681B602BC@Williams&#45;MacBook&#45;Pro.local -->
+<!--X-Content-Type: text/plain -->
+<!--X-Head-End-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>[NCDXC Chat] T31EU's use of FT8</title>
+<link rev="made" href="mailto:frantz@pwpconsult.com">
+</head>
+<body>
+<!--X-Body-Begin-->
+<!--X-User-Header-->
+<!--X-User-Header-End-->
+<!--X-TopPNI-->
+<hr>
+[<a href="msg16681.html">Date Prev</a>][<a href="msg16683.html">Date Next</a>][<a href="msg16681.html">Thread Prev</a>][<a href="msg16683.html">Thread Next</a>][<a href="maillist.html#16682">Date Index</a>][<a href="threads.html#16682">Thread Index</a>]
+<!--X-TopPNI-End-->
+<!--X-MsgBody-->
+<!--X-Subject-Header-Begin-->
+<h1>[NCDXC Chat] T31EU's use of FT8</h1>
+<hr>
+<!--X-Subject-Header-End-->
+<!--X-Head-of-Message-->
+<ul>
+<li><em>To</em>: CHAT NCDXC &lt;<a href="mailto:chat%40ncdxc.org">chat@ncdxc.org</a>&gt;</li>
+<li><em>Subject</em>: [NCDXC Chat] T31EU's use of FT8</li>
+<li><em>From</em>: Bill Frantz &lt;<a href="mailto:frantz%40pwpconsult.com">frantz@pwpconsult.com</a>&gt;</li>
+<li><em>Date</em>: Mon,  4 Mar 2019 11:37:55 -0800</li>
+<li><em>Cc</em>: Bill Mullin &lt;<a href="mailto:MrBill%40AA4M.Com">MrBill@AA4M.Com</a>&gt;, Fred Price &lt;<a href="mailto:n2xk%40hotmail.com">n2xk@hotmail.com</a>&gt;</li>
+<li><em>List-archive</em>: &lt;<a href="http://mail.ncdxc.org/mailman/private/chat_ncdxc.org/">http://mail.ncdxc.org/mailman/private/chat_ncdxc.org/</a>&gt;</li>
+<li><em>List-help</em>: &lt;<a href="mailto:chat-request@ncdxc.org?subject=help">mailto:chat-request@ncdxc.org?subject=help</a>&gt;</li>
+<li><em>List-id</em>: NCDXC Discussion List &lt;chat.ncdxc.org&gt;</li>
+<li><em>List-post</em>: &lt;<a href="mailto:chat@ncdxc.org">mailto:chat@ncdxc.org</a>&gt;</li>
+<li><em>List-subscribe</em>: &lt;<a href="http://mail.ncdxc.org/mailman/listinfo/chat_ncdxc.org">http://mail.ncdxc.org/mailman/listinfo/chat_ncdxc.org</a>&gt;,	&lt;<a href="mailto:chat-request@ncdxc.org?subject=subscribe">mailto:chat-request@ncdxc.org?subject=subscribe</a>&gt;</li>
+<li><em>List-unsubscribe</em>: &lt;<a href="http://mail.ncdxc.org/mailman/options/chat_ncdxc.org">http://mail.ncdxc.org/mailman/options/chat_ncdxc.org</a>&gt;,	&lt;<a href="mailto:chat-request@ncdxc.org?subject=unsubscribe">mailto:chat-request@ncdxc.org?subject=unsubscribe</a>&gt;</li>
+</ul>
+<!--X-Head-of-Message-End-->
+<!--X-Head-Body-Sep-Begin-->
+<hr>
+<!--X-Head-Body-Sep-End-->
+<!--X-Body-of-Message-->
+<tt>Some explanation for T31EU's use of FT8 comes from the wsjt 
+</tt><tt>developer list:
+</tt><pre style="margin: 0em;">
+
+On Mar 2, 2019 11:39 AM, Bill Mullin &lt;MrBill@AA4M.Com&gt; asked:
+
+</pre><tt>T31EU was on 3.574 in F/H mode, at least I thought he was after 
+</tt><tt>seeing the following line:
+</tt><pre style="margin: 0em;">
+
+134545 -6 2.5 489 ~ JA0EBV RR73; UK8AEA &lt;T31EU&gt; -14
+
+</pre><tt>As you can see, the Fox was transmitting on the odd seconds (15, 
+</tt><tt>45).  But WSJT-X would not allow me to transmit on the even 
+</tt><tt>times (00, 30), only on the odds.  Because of this, I was unable 
+</tt><tt>to work the Fox. ...
+</tt><pre style="margin: 0em;">
+
+73, Bill - AA4M
+
+
+Fred, N2XK responded:
+
+</pre><tt>Not DXPedition mode but a clone running what they call 
+</tt><tt>multi-thread. Just use normal FT8 to work them if they are on 
+</tt><tt>normal FT8 frequencies as DXPedition mode doesn't work on the 
+</tt><tt>normal frequencies.
+</tt><pre style="margin: 0em;">
+
+I will also mention, that if you get a response like:
+
+192015  -9  0.4 1529 ~  AB4UF RR73; AE6JV &lt;T31EU&gt; -06
+
+</pre><tt>wsjt-x will not recognize the TX2 message &quot;AE6JV &lt;T31EU&gt; -06&quot; 
+</tt><tt>embedded in the above message, since it isn't in fox/hound mode. 
+</tt><tt>You should manually send the TX3 message &quot;T31EU AE6JV R-09&quot;.
+</tt><pre style="margin: 0em;">
+
+Here's the transcript of my 17M QSO:
+
+191945 -11  0.5 1529 ~  AB4UF T31EU +02
+192000  Tx      1708 ~  T31EU AE6JV CM97
+192015  -9  0.4 1529 ~  AB4UF RR73; AE6JV &lt;T31EU&gt; -06
+192030  Tx      1708 ~  T31EU AE6JV CM97
+192041  Tx      1708 ~  T31EU AE6JV R-09
+192045 -11  0.3 1529 ~  K9EL T31EU +08
+192045 -12  0.3 1469 ~  AE6JV T31EU -06
+192100  Tx      1708 ~  T31EU AE6JV R-12
+192115  -9  0.7 1469 ~  AE6JV T31EU -06
+192130  Tx      1708 ~  T31EU AE6JV R-09
+192145 -14  0.5 1469 ~  AE6JV T31EU RR73                      a3
+192200  Tx      1708 ~  T31EU AE6JV 73
+
+73 Bill AE6JV
+
+-----------------------------------------------------------------------
+Bill Frantz        | When an old person dies, a   | Periwinkle
+</pre><tt>(408)356-8506      | library burns. - Joe McGawon | 16345 
+</tt><tt>Englewood Ave
+</tt><tt>www.pwpconsult.com | Irish Ethnographer           | Los Gatos, 
+</tt><tt>CA 95032
+</tt><pre style="margin: 0em;">
+
+
+
+</pre>
+<!--X-Body-of-Message-End-->
+<!--X-MsgBody-End-->
+<!--X-Follow-Ups-->
+<hr>
+<!--X-Follow-Ups-End-->
+<!--X-References-->
+<!--X-References-End-->
+<!--X-BotPNI-->
+<ul>
+<li>Prev by Date:
+<strong><a href="msg16681.html">[NCDXC Chat] Any IDXC Attendees driving through Fresno on Thursday afternoon April 11th?</a></strong>
+</li>
+<li>Next by Date:
+<strong><a href="msg16683.html">[NCDXC Chat] IDXC Help</a></strong>
+</li>
+<li>Previous by thread:
+<strong><a href="msg16681.html">[NCDXC Chat] Any IDXC Attendees driving through Fresno on Thursday afternoon April 11th?</a></strong>
+</li>
+<li>Next by thread:
+<strong><a href="msg16683.html">[NCDXC Chat] IDXC Help</a></strong>
+</li>
+<li>Index(es):
+<ul>
+<li><a href="maillist.html#16682"><strong>Date</strong></a></li>
+<li><a href="threads.html#16682"><strong>Thread</strong></a></li>
+</ul>
+</li>
+</ul>
+
+<!--X-BotPNI-End-->
+<!--X-User-Footer-->
+<!--X-User-Footer-End-->
+</body>
+</html>
