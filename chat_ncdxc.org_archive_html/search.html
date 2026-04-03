@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="robots" content="noindex, nofollow">
     <title>NCDXC Archive Search</title>
-    <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
-    <script src="/pagefind/pagefind-ui.js"></script>
+    <link href="/chat-archives/chat_ncdxc.org_archive_html/pagefind/pagefind-ui.css" rel="stylesheet">
+    <script src="/chat-archives/chat_ncdxc.org_archive_html/pagefind/pagefind-ui.js"></script>
 </head>
 <body>
     <h1>NCDXC Mailman Archive Search</h1>
@@ -13,11 +13,11 @@
     <script>
         window.addEventListener('DOMContentLoaded', (event) => {
             new PagefindUI({ 
-			element: "#search", 
-            // This is the fix: it tells Pagefind to look in the repo subfolder
-            _bundlePath: "/chat-archives/chat_ncdxc.org_archive_html/pagefind/", 
-            showSubResults: true
-			});
+                element: "#search", 
+                // Removed the underscore and ensured the path matches your repo structure
+                bundlePath: "/chat-archives/chat_ncdxc.org_archive_html/pagefind/", 
+                showSubResults: true
+            });
         });
     </script>
 </body>
